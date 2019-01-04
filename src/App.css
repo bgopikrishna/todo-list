@@ -1,0 +1,50 @@
+.App {
+  width: 300px;
+  min-height: 100vh;
+  margin: auto;
+}
+.active {
+  color: red;
+}
+.nav-menu > * {
+  border: 0px !important;
+}
+.addTodo {
+  position: fixed;
+  width: 300px;
+  margin: auto;
+  bottom: 0;
+  z-index: 9999;
+}
+.addTodo button {
+  background: white;
+  opacity: 1;
+}
+.todo-list {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  font-style: italic !important;
+}
+@media (max-width: 900px) {
+  .App {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px 10px;
+  }
+  .addTodo {
+    position: fixed;
+    width: 300px;
+    margin: auto;
+    bottom: 10px;
+    z-index: 9999;
+    box-sizing: content-box !important;
+    width: 95%;
+  }
+  .addTodo form {
+    width: 100%;
+  }
+}
